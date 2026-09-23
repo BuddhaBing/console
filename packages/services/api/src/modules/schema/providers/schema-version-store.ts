@@ -1767,7 +1767,7 @@ const SchemaVersionModel = z
     meta: SchemaVersionMetaModel.nullable(),
     actionId: z.string(),
     origin: SchemaVersionOriginModel.nullable(),
-    graphId: z.string(),
+    graphId: z.string().nullable(),
     graphMetadata: GraphMetadataModel.nullable(),
     sourceSchemaVersionId: z.string().nullable(),
   })
